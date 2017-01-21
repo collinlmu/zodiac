@@ -1,3 +1,5 @@
+
+
 var zodiacs = [
   {
     name: 'Aries',
@@ -73,8 +75,13 @@ var zodiacs = [
   }
 ];
 
-for (var i = 0; i < zodiacs.length; i++) {
-  if (zodiacs[i]['name'] === 'ZodiacName') {
-    console.log('Name: ', zodiacs[i]['name'])
-  }
+function getInfo() {
+    var zodiac = document.getElementById("ZodiacName").value
+    for(var i = 0; i < zodiacs.length; i++) {
+      if(zodiac === zodiacs[i].name) {
+        document.write("Name: ", zodiacs[i].name)
+        document.write("Dates: ", zodiacs[i].dates)
+        return
+      }
+    } document.write("incorrect spelling or capitalization!")
 }
