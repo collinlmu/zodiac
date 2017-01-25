@@ -6,14 +6,22 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link rel="icon" href="img/icon.png" type="image/png" sizes="16x16">
   </head>
   <body>
     <h1>Zodiac Informer</h1>
     <h3>Find information about your Zodiac incudling dates, characteristics, and compatability!</h3>
-    <input id="ZodiacName" type="text"  value="" placeholder="enter your zodiac">
+    <input id="ZodiacName" type="text"  value="" placeholder="enter your zodiac" onkeydown = "getInfo()">
     <input id="SubmitButton"type="button" value="Find Your Zodiac" onclick="getInfo()">
-    
+
+
+
+    <p id="name"></p>
+    <p id="dates"></p>
+    <p id="characteristics"></p>
+    <p id="compatability"></p>
+    <img id="image" src="">
+
     <script src="js/javascript.js"></script>
   </body>
 </html>
